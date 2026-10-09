@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  @apply bg-ink-950 text-white antialiased;
+  font-feature-settings: "ss01", "cv11";
+}
+
+/* Hero artwork lives in /public/img/hero-bg.svg so it can be swapped easily. */
+.bg-hero {
+  background-color: #3b1a99;
+  background-image: url("/img/hero-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Detail-page header artwork: /public/img/detail-bg.svg */
+.bg-detail {
+  background-color: #4a1fc4;
+  background-image: url("/img/detail-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+:focus-visible {
+  outline: 2px solid #D0C6FF;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+.scrollbar-none { scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+
+@keyframes float-in {
+  from { opacity: 0; transform: translateY(14px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+.hero-logo { animation: float-in 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-logo { animation: none; }
+  * { transition-duration: 0.01ms !important; }
+}
