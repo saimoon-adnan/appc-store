@@ -27,12 +27,12 @@ export const apps: AppEntry[] = [
     category: "Food & Drink",
     version: "1.3.0",
     addedDate: "2026-10-07",
-    lastUpdated: "2026-10-07",
-    fileSize: "18.7 MB",
+    lastUpdated: "2026-10-09",
+    fileSize: "18.6 MB",
     minimumAndroidVersion: "Android 7.0 or later",
     downloadUrl: "/apps/carteview/carteview-1.3.0.apk",
     // SHA-256 of carteview-1.3.0.apk, calculated from the file in this project.
-    sha256: "181ff74090b90c4e6ea05113e1e9e7301de9b3ff02ad88a5dc03c40ed8f31bf6",
+    sha256: "5a102fb32a4ed1cd711a12f959ea4724302bb4fe314a89b0645520ebb475aa32",
     permissions: [
       "Camera",
       "Microphone and audio settings",
@@ -61,7 +61,7 @@ export const apps: AppEntry[] = [
       },
     ],
     developer: { name: "CarteView Team" },
-    supportEmail: "adnansaimoon@gmail.com",
+    supportEmail: "carteviewsupport@gmail.com",
     featured: true,
   },
 ];
